@@ -1,0 +1,44 @@
+DEPENDENCIES
+  elasticsearch
+    git: https://github.com/elasticsearch/cookbook-elasticsearch.git
+    revision: 15c51a61abd659943d4879822f773bd8e5e672cf
+  kibana
+    git: https://github.com/realityforge/chef-kibana.git
+    revision: f4a7658dc2f773909ef0341b65303d4f4329d6df
+  td-agent
+    git: https://github.com/treasure-data/chef-td-agent.git
+    revision: e156802adf3cc19a56887ebfca544dc502e8776c
+  timezone-ii
+    git: https://github.com/L2G/timezone-ii.git
+    revision: 97ff6559a1d87b8db9b536bfc32195245aadcda7
+
+GRAPH
+  apache2 (1.10.4)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    pacman (>= 0.0.0)
+  apt (2.3.10)
+  ark (0.8.2)
+  build-essential (2.0.0)
+  elasticsearch (0.3.8)
+    ark (>= 0.2.4)
+    build-essential (>= 0.0.0)
+    java (>= 0.0.0)
+    monit (>= 0.0.0)
+    xml (>= 0.0.0)
+  iptables (0.13.2)
+  java (1.22.0)
+  kibana (0.1.7)
+    apache2 (>= 0.0.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+  logrotate (1.5.0)
+  monit (0.7.1)
+  pacman (1.1.1)
+  td-agent (0.0.1)
+    apt (>= 0.0.0)
+    yum (>= 0.0.0)
+  timezone-ii (0.2.0)
+  xml (1.2.4)
+    build-essential (>= 0.0.0)
+  yum (3.2.0)
