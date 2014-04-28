@@ -7,19 +7,16 @@
 
 #import "CTFluentLogger.h"
 #import "GCDAsyncSocket.h"
-#import "GCDAsyncUdpSocket.h"
 #import "MessagePackPacker.h"
 #include <sys/sysctl.h>
 
 static const int CTFluentLoggerTimeout = 15;
 
-@interface CTFluentLogger () <GCDAsyncSocketDelegate, GCDAsyncUdpSocketDelegate>
+@interface CTFluentLogger () <GCDAsyncSocketDelegate>
 @property (nonatomic, strong) dispatch_queue_t delegateQueue;
 @property (nonatomic, strong) GCDAsyncSocket *asyncSocket;
-@property (nonatomic, strong) GCDAsyncUdpSocket *asyncUdpSocket;
 @property (nonatomic, copy) NSString *host;
 @property (nonatomic) uint16_t port;
-@property (nonatomic) BOOL udpConnected;
 @end
 
 @implementation CTFluentLogger
@@ -45,7 +42,6 @@ static const int CTFluentLoggerTimeout = 15;
     if (self) {
         self.delegateQueue = dispatch_queue_create("jp.caph.CTFluentLogger.delegateQueue", NULL);
         self.asyncSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:self.delegateQueue];
-        self.asyncUdpSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:self.delegateQueue];
     }
     return self;
 }
@@ -57,14 +53,6 @@ static const int CTFluentLoggerTimeout = 15;
     BOOL success = [self.asyncSocket connectToHost:self.host onPort:self.port error:&error];
     if (error) {
         NSLog(@"Error connecting: %@", error);
-        return success;
-    }
-
-    self.asyncUdpSocket.delegate = self;
-    success = success && [self.asyncUdpSocket connectToHost:self.host onPort:self.port error:&error];
-    if (error) {
-        NSLog(@"Error connecting: %@", error);
-        return success;
     }
 
     return success;
@@ -75,14 +63,9 @@ static const int CTFluentLoggerTimeout = 15;
     self.asyncSocket.delegate = nil;
     [self.asyncSocket disconnectAfterWriting];
 
-    self.asyncUdpSocket.delegate = nil;
-    [self.asyncUdpSocket close];
-
     [self willChangeValueForKey:@"connected"];
     _connected = NO;
     [self didChangeValueForKey:@"connected"];
-
-    self.udpConnected = NO;
 }
 
 - (void)setHost:(NSString *)host port:(uint16_t)port tagPrefix:(NSString *)tagPrefix
@@ -209,17 +192,6 @@ static const int CTFluentLoggerTimeout = 15;
 #endif
 }
 
-- (void)sendHeartBeat
-{
-    [self.asyncUdpSocket sendData:[@"h" dataUsingEncoding:NSASCIIStringEncoding] withTimeout:10.0 tag:0];
-
-    if (self.udpConnected) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10.0 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            [self sendHeartBeat];
-        });
-    }
-}
-
 #pragma mark - GCDAsyncSocketDelegate
 
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port
@@ -234,20 +206,6 @@ static const int CTFluentLoggerTimeout = 15;
     [self willChangeValueForKey:@"connected"];
     _connected = NO;
     [self didChangeValueForKey:@"connected"];
-}
-
-#pragma mark GCDAsyncUdpSocketDelegate
-
-- (void)udpSocket:(GCDAsyncUdpSocket *)sock didConnectToAddress:(NSData *)address
-{
-    self.udpConnected = YES;
-
-    [self sendHeartBeat];
-}
-
-- (void)udpSocketDidClose:(GCDAsyncUdpSocket *)sock withError:(NSError *)error
-{
-    [self disconnect];
 }
 
 @end
