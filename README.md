@@ -3,6 +3,15 @@ CTFluentLogger
 
 CTFluentLogger is a library to send log to Fluentd for iOS 6.0+ and OSX 10.9+.
 
+Install
+----------
+
+Using CocoaPods, in Podfile
+```
+pod 'CTFluentLogger', :podspec => 'https://raw.githubusercontent.com/rizumita/CTFluentLogger/master/CTFluentLogger.podspec'
+```
+
+
 Usage
 ----------
 
@@ -27,7 +36,7 @@ You may have to detect network reachability to reconnect and disconnect the logg
 Sample
 ----------
 
-If you want Fluentd and elasticsearch + Kibana3 running on Vagrant, use the following command.
+If you want Fluentd and elasticsearch + Kibana3 running on Vagrant, install Vagrant and VirtualBox and run the following command.
 
 ```Bash
    cd sandbox
@@ -37,7 +46,7 @@ If you want Fluentd and elasticsearch + Kibana3 running on Vagrant, use the foll
    vagrant up
 ```
 
-Open Kibana3 page at 'http://localhost:8080' on your browser. And set every 5s refresh rate.
+Open Kibana3 page at 'http://localhost:8080/index.html#/dashboard/file/logstash.json' on your browser. And set every 5s auto-refresh.
 
 Move CTFluentLoggerSample directory, and run 'pod install'.
 
