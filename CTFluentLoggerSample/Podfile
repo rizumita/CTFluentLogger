@@ -1,8 +1,10 @@
 platform :ios, '7.0'
 
-pod 'CocoaAsyncSocket'
-pod 'MessagePack'
-pod 'GCNetworkReachability'
+target :CTFluentLoggerSample do
+  pod 'CocoaAsyncSocket'
+  pod 'MessagePack'
+  pod 'GCNetworkReachability'
+end
 
 target :CTFluentLoggerSampleMac do
   platform :osx, '10.9'

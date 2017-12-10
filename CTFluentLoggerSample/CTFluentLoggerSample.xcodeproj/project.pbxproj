@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14504C13285648C5917D709F /* libPods-CTFluentLoggerSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5855C7E44149492294C305C4 /* libPods-CTFluentLoggerSampleTests.a */; };
 		6A33AF38190B226900EE76A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AF37190B226900EE76A6 /* Foundation.framework */; };
 		6A33AF3A190B226900EE76A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AF39190B226900EE76A6 /* CoreGraphics.framework */; };
 		6A33AF3C190B226900EE76A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AF3B190B226900EE76A6 /* UIKit.framework */; };
@@ -36,8 +35,8 @@
 		6A33AFA4190B5D5300EE76A6 /* CTFluentLoggerSampleMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AFA3190B5D5300EE76A6 /* CTFluentLoggerSampleMacTests.m */; };
 		6A33AFAB190B5F7500EE76A6 /* CTFluentLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AF72190B2AA400EE76A6 /* CTFluentLogger.m */; };
 		6A33AFAC190B5F7600EE76A6 /* CTFluentLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AF72190B2AA400EE76A6 /* CTFluentLogger.m */; };
-		7B5BE2CE46CD44FB9F69DCB1 /* libPods-CTFluentLoggerSampleMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8234840075954C6BB6234033 /* libPods-CTFluentLoggerSampleMac.a */; };
-		8CBA2079A43C4D1C92892C9C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B85DB24B246B4294A75B7D80 /* libPods.a */; };
+		C2140B2C66A69997194E694D /* libPods-CTFluentLoggerSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6211B71544CDD843AC262C0 /* libPods-CTFluentLoggerSample.a */; };
+		CDFBDCB3D15AD43C61B0B10E /* libPods-CTFluentLoggerSampleMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 826EE57FDDDB13D9A34E893B /* libPods-CTFluentLoggerSampleMac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009FA53C2AEF415AB58CA2BC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		2D0D8D4235B546208EF449F7 /* Pods-CTFluentLoggerSampleMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTFluentLoggerSampleMac.xcconfig"; path = "Pods/Pods-CTFluentLoggerSampleMac.xcconfig"; sourceTree = "<group>"; };
-		4671E5858C384463A94E3864 /* Pods-CTFluentLoggerSampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTFluentLoggerSampleTests.xcconfig"; path = "Pods/Pods-CTFluentLoggerSampleTests.xcconfig"; sourceTree = "<group>"; };
-		5855C7E44149492294C305C4 /* libPods-CTFluentLoggerSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTFluentLoggerSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A33AF34190B226900EE76A6 /* CTFluentLoggerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTFluentLoggerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A33AF37190B226900EE76A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A33AF39190B226900EE76A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,8 +95,12 @@
 		6A33AF9F190B5D5300EE76A6 /* CTFluentLoggerSampleMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CTFluentLoggerSampleMacTests-Info.plist"; sourceTree = "<group>"; };
 		6A33AFA1190B5D5300EE76A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A33AFA3190B5D5300EE76A6 /* CTFluentLoggerSampleMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTFluentLoggerSampleMacTests.m; sourceTree = "<group>"; };
-		8234840075954C6BB6234033 /* libPods-CTFluentLoggerSampleMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTFluentLoggerSampleMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B85DB24B246B4294A75B7D80 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E41F2BF8B7E0D50207FC949 /* Pods-CTFluentLoggerSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTFluentLoggerSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTFluentLoggerSample/Pods-CTFluentLoggerSample.release.xcconfig"; sourceTree = "<group>"; };
+		826EE57FDDDB13D9A34E893B /* libPods-CTFluentLoggerSampleMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTFluentLoggerSampleMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7ECBF3B2E0EB64C0FF4CAFB /* Pods-CTFluentLoggerSampleMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTFluentLoggerSampleMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTFluentLoggerSampleMac/Pods-CTFluentLoggerSampleMac.release.xcconfig"; sourceTree = "<group>"; };
+		CC36548EF210A3C23E642449 /* Pods-CTFluentLoggerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTFluentLoggerSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTFluentLoggerSample/Pods-CTFluentLoggerSample.debug.xcconfig"; sourceTree = "<group>"; };
+		CCF62735B7BD77727B5282E1 /* Pods-CTFluentLoggerSampleMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTFluentLoggerSampleMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTFluentLoggerSampleMac/Pods-CTFluentLoggerSampleMac.debug.xcconfig"; sourceTree = "<group>"; };
+		E6211B71544CDD843AC262C0 /* libPods-CTFluentLoggerSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTFluentLoggerSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +111,7 @@
 				6A33AF3A190B226900EE76A6 /* CoreGraphics.framework in Frameworks */,
 				6A33AF3C190B226900EE76A6 /* UIKit.framework in Frameworks */,
 				6A33AF38190B226900EE76A6 /* Foundation.framework in Frameworks */,
-				8CBA2079A43C4D1C92892C9C /* libPods.a in Frameworks */,
+				C2140B2C66A69997194E694D /* libPods-CTFluentLoggerSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +122,6 @@
 				6A33AF57190B226900EE76A6 /* XCTest.framework in Frameworks */,
 				6A33AF59190B226900EE76A6 /* UIKit.framework in Frameworks */,
 				6A33AF58190B226900EE76A6 /* Foundation.framework in Frameworks */,
-				14504C13285648C5917D709F /* libPods-CTFluentLoggerSampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A33AF7B190B5D5300EE76A6 /* Cocoa.framework in Frameworks */,
-				7B5BE2CE46CD44FB9F69DCB1 /* libPods-CTFluentLoggerSampleMac.a in Frameworks */,
+				CDFBDCB3D15AD43C61B0B10E /* libPods-CTFluentLoggerSampleMac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +146,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09CA9EC5DB67D0DD97D774D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC36548EF210A3C23E642449 /* Pods-CTFluentLoggerSample.debug.xcconfig */,
+				7E41F2BF8B7E0D50207FC949 /* Pods-CTFluentLoggerSample.release.xcconfig */,
+				CCF62735B7BD77727B5282E1 /* Pods-CTFluentLoggerSampleMac.debug.xcconfig */,
+				C7ECBF3B2E0EB64C0FF4CAFB /* Pods-CTFluentLoggerSampleMac.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6A33AF2B190B226900EE76A6 = {
 			isa = PBXGroup;
 			children = (
@@ -158,9 +167,7 @@
 				6A33AF9D190B5D5300EE76A6 /* CTFluentLoggerSampleMacTests */,
 				6A33AF36190B226900EE76A6 /* Frameworks */,
 				6A33AF35190B226900EE76A6 /* Products */,
-				009FA53C2AEF415AB58CA2BC /* Pods.xcconfig */,
-				4671E5858C384463A94E3864 /* Pods-CTFluentLoggerSampleTests.xcconfig */,
-				2D0D8D4235B546208EF449F7 /* Pods-CTFluentLoggerSampleMac.xcconfig */,
+				09CA9EC5DB67D0DD97D774D0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,11 +189,10 @@
 				6A33AF39190B226900EE76A6 /* CoreGraphics.framework */,
 				6A33AF3B190B226900EE76A6 /* UIKit.framework */,
 				6A33AF56190B226900EE76A6 /* XCTest.framework */,
-				B85DB24B246B4294A75B7D80 /* libPods.a */,
-				5855C7E44149492294C305C4 /* libPods-CTFluentLoggerSampleTests.a */,
 				6A33AF7A190B5D5300EE76A6 /* Cocoa.framework */,
 				6A33AF7C190B5D5300EE76A6 /* Other Frameworks */,
-				8234840075954C6BB6234033 /* libPods-CTFluentLoggerSampleMac.a */,
+				E6211B71544CDD843AC262C0 /* libPods-CTFluentLoggerSample.a */,
+				826EE57FDDDB13D9A34E893B /* libPods-CTFluentLoggerSampleMac.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,12 +307,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A33AF66190B226900EE76A6 /* Build configuration list for PBXNativeTarget "CTFluentLoggerSample" */;
 			buildPhases = (
-				B48C7B194F104407AA1B4B45 /* Check Pods Manifest.lock */,
+				06F2AF808D70EF1D5C06942D /* [CP] Check Pods Manifest.lock */,
 				6A33AF30190B226900EE76A6 /* Sources */,
 				6A33AF31190B226900EE76A6 /* Frameworks */,
 				6A33AF32190B226900EE76A6 /* Resources */,
-				45026A26B3A742BEB6006FE0 /* Copy Pods Resources */,
 				6A33AFAD190C6F3D00EE76A6 /* ShellScript */,
+				43FDB38C896C216BAD18B648 /* [CP] Embed Pods Frameworks */,
+				BB1D6F5CBD5061F4FC0BD716 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,11 +328,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A33AF69190B226900EE76A6 /* Build configuration list for PBXNativeTarget "CTFluentLoggerSampleTests" */;
 			buildPhases = (
-				7E24C6DB36D94C5897050951 /* Check Pods Manifest.lock */,
 				6A33AF51190B226900EE76A6 /* Sources */,
 				6A33AF52190B226900EE76A6 /* Frameworks */,
 				6A33AF53190B226900EE76A6 /* Resources */,
-				2C39DEB60CB442178430678E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,11 +346,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A33AFA9190B5D5300EE76A6 /* Build configuration list for PBXNativeTarget "CTFluentLoggerSampleMac" */;
 			buildPhases = (
-				D3AD351A582E4696A8D3CA3F /* Check Pods Manifest.lock */,
+				FAD51353C041220C822F148C /* [CP] Check Pods Manifest.lock */,
 				6A33AF75190B5D5300EE76A6 /* Sources */,
 				6A33AF76190B5D5300EE76A6 /* Frameworks */,
 				6A33AF77190B5D5300EE76A6 /* Resources */,
-				8C6D8CF70A8A4668B3262C2C /* Copy Pods Resources */,
+				14A8A86CA7488DE560F8BCF8 /* [CP] Embed Pods Frameworks */,
+				A3CD5D2BE4C75AC81A5D456F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -384,8 +390,15 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = CAPH;
 				TargetAttributes = {
+					6A33AF33190B226900EE76A6 = {
+						DevelopmentTeam = RV6DJ2NMCD;
+					};
 					6A33AF54190B226900EE76A6 = {
 						TestTargetID = 6A33AF33190B226900EE76A6;
+					};
+					6A33AF78190B5D5300EE76A6 = {
+						DevelopmentTeam = RV6DJ2NMCD;
+						ProvisioningStyle = Automatic;
 					};
 					6A33AF97190B5D5300EE76A6 = {
 						TestTargetID = 6A33AF33190B226900EE76A6;
@@ -454,34 +467,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C39DEB60CB442178430678E /* Copy Pods Resources */ = {
+		06F2AF808D70EF1D5C06942D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CTFluentLoggerSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CTFluentLoggerSampleTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		45026A26B3A742BEB6006FE0 /* Copy Pods Resources */ = {
+		14A8A86CA7488DE560F8BCF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTFluentLoggerSampleMac/Pods-CTFluentLoggerSampleMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43FDB38C896C216BAD18B648 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTFluentLoggerSample/Pods-CTFluentLoggerSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6A33AFAD190C6F3D00EE76A6 /* ShellScript */ = {
@@ -497,64 +528,52 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ \"${CONFIGURATION}\" == \"Debug\" && \"${PLATFORM_NAME}\" != *simulator* ]]; then\nplist=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\nip=$(ifconfig en0 | grep \"inet[^6]\" | cut -d\" \" -f2)\n/usr/libexec/PlistBuddy -c \"Set :FluentdHost $ip\" $plist\nfi";
 		};
-		7E24C6DB36D94C5897050951 /* Check Pods Manifest.lock */ = {
+		A3CD5D2BE4C75AC81A5D456F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTFluentLoggerSampleMac/Pods-CTFluentLoggerSampleMac-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8C6D8CF70A8A4668B3262C2C /* Copy Pods Resources */ = {
+		BB1D6F5CBD5061F4FC0BD716 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CTFluentLoggerSampleMac-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTFluentLoggerSample/Pods-CTFluentLoggerSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B48C7B194F104407AA1B4B45 /* Check Pods Manifest.lock */ = {
+		FAD51353C041220C822F148C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CTFluentLoggerSampleMac-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D3AD351A582E4696A8D3CA3F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -745,14 +764,15 @@
 		};
 		6A33AF67190B226900EE76A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 009FA53C2AEF415AB58CA2BC /* Pods.xcconfig */;
+			baseConfigurationReference = CC36548EF210A3C23E642449 /* Pods-CTFluentLoggerSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CTFluentLoggerSample/CTFluentLoggerSample-Prefix.pch";
 				INFOPLIST_FILE = "CTFluentLoggerSample/CTFluentLoggerSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
@@ -761,14 +781,15 @@
 		};
 		6A33AF68190B226900EE76A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 009FA53C2AEF415AB58CA2BC /* Pods.xcconfig */;
+			baseConfigurationReference = 7E41F2BF8B7E0D50207FC949 /* Pods-CTFluentLoggerSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CTFluentLoggerSample/CTFluentLoggerSample-Prefix.pch";
 				INFOPLIST_FILE = "CTFluentLoggerSample/CTFluentLoggerSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
@@ -777,7 +798,6 @@
 		};
 		6A33AF6A190B226900EE76A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4671E5858C384463A94E3864 /* Pods-CTFluentLoggerSampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CTFluentLoggerSample.app/CTFluentLoggerSample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -800,7 +820,6 @@
 		};
 		6A33AF6B190B226900EE76A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4671E5858C384463A94E3864 /* Pods-CTFluentLoggerSampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CTFluentLoggerSample.app/CTFluentLoggerSample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -819,10 +838,13 @@
 		};
 		6A33AFA5190B5D5300EE76A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D0D8D4235B546208EF449F7 /* Pods-CTFluentLoggerSampleMac.xcconfig */;
+			baseConfigurationReference = CCF62735B7BD77727B5282E1 /* Pods-CTFluentLoggerSampleMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -837,6 +859,7 @@
 				INFOPLIST_FILE = "CTFluentLoggerSampleMac/CTFluentLoggerSampleMac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -844,11 +867,14 @@
 		};
 		6A33AFA6190B5D5300EE76A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D0D8D4235B546208EF449F7 /* Pods-CTFluentLoggerSampleMac.xcconfig */;
+			baseConfigurationReference = C7ECBF3B2E0EB64C0FF4CAFB /* Pods-CTFluentLoggerSampleMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RV6DJ2NMCD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -859,6 +885,7 @@
 				INFOPLIST_FILE = "CTFluentLoggerSampleMac/CTFluentLoggerSampleMac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
