@@ -14,7 +14,7 @@
 
 @property (nonatomic, readonly) BOOL connected;
 
-@property (nonatomic, strong) NSString *tagPrefix;
+@property (nonatomic, strong) NSString * _Nullable tagPrefix;
 
 @property (nonatomic) BOOL shouldAddBuildNumber;
 
@@ -24,14 +24,16 @@
 
 @property (nonatomic) BOOL shouldAddSystemVersion;
 
-+ (CTFluentLogger *)sharedLogger;
++ (CTFluentLogger *_Nonnull)sharedLogger;
 
 - (BOOL)connect;
 
 - (void)disconnect;
 
-- (void)setHost:(NSString *)host port:(uint16_t)port tagPrefix:(NSString *)tagPrefix;
+- (void)startTLS:(nullable NSDictionary <NSString*,NSObject*>*)tlsSettings;
 
-- (void)sendLogWithTag:(NSString *)tag fields:(NSDictionary *)fields;
+- (void)setHost:(nonnull NSString *)host port:(uint16_t)port tagPrefix:(nullable NSString *)tagPrefix;
+
+- (void)sendLogWithTag:(nonnull NSString *)tag fields:(nonnull NSDictionary *)fields;
 
 @end

@@ -68,6 +68,11 @@ static const int CTFluentLoggerTimeout = 15;
     [self didChangeValueForKey:@"connected"];
 }
 
+- (void)startTLS:(nullable NSDictionary <NSString*,NSObject*>*)tlsSettings
+{
+    [self.asyncSocket startTLS:tlsSettings];
+}
+
 - (void)setHost:(NSString *)host port:(uint16_t)port tagPrefix:(NSString *)tagPrefix
 {
     self.host = host;
